@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>cbdzmh is so beautiful</title>
+		<link rel="stylesheet" href="css/reset.css" /> <!--页面全屏-->
+		<link rel="stylesheet" href="css/demo.css" /><!--界面-->
+		<link rel="stylesheet" href="css/audioplayer.css" /><!--播放器-->
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/xuanzhuanmuma.css" />
+		<script>
+		/*alert("本网页适用于分辨率1920x1080缩放为150%的电脑！");*/
+			(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+		</script>
+<style type="text/css">
+ body{
+     background-color:#e5e5e5;
+	 position:relative;
+	 }
+  .welcome{
+          z-index:2;
+          background-color:#5c5c5c;
+		  color:#ffffff;
+          width:100%;
+		  height:40px;
+		  position:relative;
+		  font-family:'幼圆';
+		  font-size:22px;
+		  text-align:right;
+		  line-height:38px;
+		  position:fixed;
+		  margin-top:0;
+		  }
+		  .font{
+		       font-family:'幼圆';
+			   position:relative;
+			   font-size:20px auto;
+			   text-align:left;
+			   }
+		  a.title:link,a.title:visited{
+				text-decoration:none;
+				color:#ffffff;
+				background:#5c5c5c;
+				}
+		  a.title:hover{
+				background:#330000;
+				}
+ .photo img{     
+	   float:left;
+	   margin-left:12px;
+	   max-width:100%;
+       max-height:100%;
+       }
+ .button{
+        float:left;
+		margin-bottom:0;
+		font-size:20px;
+		position:relative;
+		font-family:'微软雅黑';
+		}
+		a.son:link,a.son:visited{
+			text-decoration:none;
+			}
+		a.son:hover{
+		    color:#ffffff;
+			}
+ .chazhao{
+         font-size:14px;
+		 }
+ .finddiv{
+         float:left;
+		 margin-left:570px;
+		 position:relative;
+		 }
+		.find{
+			 font-size:15px;
+			 }
+/* .more{
+      float:left;
+	  position:relative;
+	  }
+	  .a{
+	    margin-left:100px;
+		list-style-image:url(图标.gif);
+		}*/
+ .part{
+       background-color:rgba(0,0,0,0~1);
+	   margin-top:130px;
+	   margin-left:10px;
+	   margin-right:10px;
+	   width:auto;
+	   height:auto;
+	   font-family:'仿宋';
+	   font-size:16px;
+	   }
+	   .yun{
+	   	   position:relative;
+		   float:left;
+		   margin-left:0px auto;
+		   }
+	   .yunduo{
+	          position:relative;
+			  float:left;
+			  margin:0 40px;
+			  font-family:'微软雅黑';
+			  font-size:16px;
+			  }
+ .down{
+       text-align:center;
+	   font-family:'宋体';
+	   font-size:14px;
+	   }
+	   a.down:link,a.down:visited{
+			text-decoration:none;
+			}
+		a.down:hover{
+		    color:#ffffff;
+			}
+		p.down{
+		      text-align:right;
+			  font-family:'隶书';
+			  font-size:15px;
+			  }
+.left{
+       float:left;
+	   margin:0 45px;
+	   }
+.htz{
+    position:relative;
+    float:left;
+	font-family:'华文楷体';
+	font-size:18px;
+	text-align:right;
+	margin-top:100px;
+	background:url(花藤左.gif);
+	background-repeat:no-repeat;
+	width:310px;
+	height:200px;
+	}
+.hty{
+position:relative;
+    float:left;
+	font-family:'华文楷体';
+	font-size:18px;
+	text-align:left;
+	background:url(花藤.gif);
+	background-repeat:no-repeat;
+	width:310px;
+	height:200px;
+	}
+h2{
+  text-align:center;
+  font-family:'华文新魏';
+  font-size:26px;
+  }
+  .tianzhu{
+	   position:relative;
+       margin:0 auto;
+	   width:1020px;
+	   height:420px;
+	   overflow-y:scroll;
+	   border:1px solid;
+	   }
+ .box {
+      float:left;
+	  top:5px;
+	  left:100px;
+	  margin:0 auto;
+      position:relative;
+      width:520px;
+      height:auto;
+      }
+	  .yuantu{
+	         border-radius:20px; 
+			 }
+      .text{
+	  border:0px solid;
+      position:absolute;
+      top:20px;
+	  line-height:24px;
+      left:20px;
+      width:200px;
+      height:auto;
+      text-align:center;
+	  font-family:'幼圆';
+      font-size:15px;
+	  font-weight:bold;
+      display: none;
+               }
+	  .text2{
+	  line-height:24px;
+	  border:0px solid;
+      position:absolute;
+      top:5px;
+	  right:50px;
+      width:200px;
+      height:auto;
+      text-align:center;
+	  font-family:'幼圆';
+      font-size:15px;
+	  font-weight:bold;
+      display: none;
+               }
+     .box:hover img {   
+        -webkit-filter: blur(10px);
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);    
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); 
+                    }
+    .box:hover .text{
+                display: block;
+                     }
+    .box:hover .text2{
+                display: block;
+                     }
+	.xuanzhuan{
+	width:200px;
+	margin:0 auto;}
+ </style>
+  <!--  <audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop">
+  <source src="菊次郎的夏天.mp3" type="audio/mpeg" >
+  </audio>  背景音乐-->
+<style>
+a.dhl:link,
+a.dhl:hover,
+a.dhl:visited,
+a.dhl:active {
+  color:#fff;
+  text-decoration:none;
+}
+.card-holder {  
+  position: fixed;
+  margin-top:50px;
+  width: 0px;
+  z-index:2;
+  overflow: visible;
+}
+.card-wrapper {
+  display: inline-block;
+  float: right;
+  clear: both;
+}
+.card {
+  position: relative;
+  left: 16px;
+  padding: 16px 32px 16px 64px;
+  margin: 8px;  
+  x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.card:hover {
+  position: relative;
+  left: 100%;
+  margin-left: -32px;
+  box-shadow: 
+    0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+    0 8px 8px -8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.card-content {
+  display: inline-block;
+  color: #fff;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.bg-01 { background: #539770;}
+.bg-02 { background: #4B7D74; }
+.bg-03 { background: #8DC2BC; }
+.bg-04 { background: #EDD6B4; }
+.bg-05 { background: #BE7467; }
+.bg-06 { background: #E2AE63; }
+    </style>
+	<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tiles.js"></script>
+
+
+<link rel="stylesheet" href="css/normalize.css"/>
+<link rel="stylesheet" href="css/styles.css" media="screen"/>
+
+<!--必要样式表-->
+<link rel="stylesheet" href="css/jquery.tiles.min.css"/>
+
+<style>
+    *{
+  padding: 0;
+  margin: 0;
+}
+#slideshow{
+  width: 800px;  
+  height: 480px;
+  margin: 0 auto; /*设置在页面水平居中*/
+  overflow: hidden;
+  position: relative;  
+}
+#slideshow img{
+  border-radius:20px; 
+  width: 800px;
+  position: absolute; /*图片采取绝对定位，均位于左上角，重叠在一起*/
+  top: 0;
+  left: 0;
+  opacity: 0; /*初始不透明度为0，图片都看不见*/
+  transition: opacity 1s linear; /*--重点--定义一个关于透明度的transition*/
+}
+#slideshow img.active{
+  opacity: 1; /*有active类的图片不透明度为1，即显示图片*/
+}
+
+</style>
+
+	</head>
+<!--音乐播放器-->
+	<body>
+	<div class='card-holder'>
+  <div class='card-wrapper'>
+  <div class='card-wrapper'>
+    <a class="dhl" href='#'>
+      <div class='card bg-01'>
+        <span class='card-content'><img src="up.png"/>顶端</span>
+      </div>
+    </a>
+  </div>
+  </div>
+  <div class='card-wrapper'>
+    <a class="dhl" href='#11'>
+      <div class='card bg-02'>
+        <span class='card-content'>心情</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a class="dhl" href='#12'>
+      <div class='card bg-03'>
+        <span class='card-content'>毕业季</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a class="dhl" href='#13'>
+      <div class='card bg-04'>
+        <span class='card-content'>潜山</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a class="dhl" href='#14'>
+      <div class='card bg-05'>
+        <span class='card-content'>野寨中学</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a class="dhl" href='#15'>
+      <div class='card bg-06'>
+        <span class='card-content'>更多</span>
+      </div>
+    </a>
+  </div>
+</div>
+		<div id="wrapper">
+			<audio preload="auto" controls loop="true"> 
+				<source src="菊次郎的夏天.mp3">
+			</audio>
+			<script src="js/jquery.js"></script>
+			<script src="js/audioplayer.js"></script>
+			<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+		</div>
+<!--end-->
+ <div class="welcome">
+ <span class="chazhao">
+ <input type="text" placeholder="请输入您要查找的内容">
+  <input type="button" value="查找"></span>&nbsp;&nbsp;
+ <script language=livescript>
+		today=new Date()
+		document.write("",today.getYear()+1900,".",today.getMonth()+1,".",today.getDate());
+</script>&nbsp;&nbsp;
+<script language=livescript>
+        today=new Date()
+		document.write("",today.getHours(),":",today.getMinutes());
+		</script>
+		&nbsp;&nbsp;欢迎您！
+  <span>周梦焓♥</span>
+  <a class="title" href=""><span>设置</span></a>
+  <a class="title" href=""><span>退出</span></a>
+  &nbsp;
+  </div>
+  <br><br><br>
+  <div class="photo"><img src="太阳.jpg"/>
+  <a id="11"></a>
+  <div class="button"><br><p class="font">&nbsp;愿你像个小太阳会发光！buling buling</p><br>&nbsp;&nbsp;
+  <a class="son" href="#11"><span>心情</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="son" href="#12"><span>毕业季</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="son" href="#13"><span>潜山</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="son" href="#14"><span>野寨中学</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="son" href=""><span>更多</span></a>
+  </div></div>
+  <!--
+  <div class="more">
+  <ul class="a"><br>
+  <li><a class="son" href="">美食</a></li><br>
+  <li><a class="son" href="">好剧</a></li><br>
+  <li><a class="son" href="">读书</a></li>
+  </ul>
+  </div>
+  <div class="more">
+  <ul class="a"><br>
+  <li><a class="son" href="">体育</a></li><br>
+  <li><a class="son" href="">音乐</a></li><br>
+  <li><a class="son" href="">学习</a></li>
+  </ul>
+  </div>-->
+  <div class="finddiv">
+  <form class="find" method="post" action="">
+  <ul class="wall_b"><li>内容不能正常显示?
+  <figcaption><img src="对话框.gif"/></figcaption></li></ul>
+  <br><br><br><br><br><br>
+  </form></div>
+  <div class="part">
+  <script>
+    function changelmg(num){
+		var img=document.getElementById('img_box').getElementsByTagName('img');
+		for (i=0;i<=img.length;i++){
+		if(i==num+1)
+			{img[i].style.display="inline";}
+		else
+			{img[i].style.display="none";}
+		if(num==5)
+			{img[0].style.display="inline";}
+		}
+		}
+</script><div id="img_box" class="yun">
+<img src="1.gif" onclick="changelmg(0)" style="display:inline;" title="点我试一试~"/>
+<img src="2.gif" onclick="changelmg(1)" style="display:none;" title="粉色是梦幻的"/>
+<img src="3.gif" onclick="changelmg(2)" style="display:none;" title="蓝色是轻盈的"/>
+<img src="4.gif" onclick="changelmg(3)" style="display:none;" title="绿色是活力的"/>
+<img src="5.gif" onclick="changelmg(4)" style="display:none;" title="橙色是香甜的"/>
+<img src="6.gif" onclick="changelmg(5)" style="display:none;" title="紫色是优雅的"/>
+</div>
+<center>
+<div class="yunduo">
+<h1>⬅想看我变身嘛，点击有惊喜~</h1><br>
+<h1>白色是简单的，它让一切回到了最质朴的状态</h1><br>
+<h1>粉色是梦幻的，它能带给人温暖的感觉</h1><br>
+<h1>蓝色是轻盈的，像海洋般广阔，像天空般明朗</h1><br>
+<h1>绿色是活力的，它给我们以生机勃勃的力量</h1><br>
+<h1>橙色是香甜的，像麦浪，像矢车菊，像橘子般温和</h1><br>
+<h1>紫色是优雅的，像不经意间，让人回忆春天</h1>
+</div>
+</center>
+<div class="left"><a href="cbdzmh.html" target="_blank"><img src="rainbow.gif"></a></div><a id="12"></a>
+<img src="分割线.gif"/>
+<div class="htz"><br>匆匆那年，我们的故事就这样开始<br>那似乎很遥远的毕业<br>也像一班如期而至的列车缓缓驶来<br>曾一起度过了漫长石光<br>不知身为乘客的你是否<br>一如从前<br><br><br><br><br><br>
+</div>
+<div class="left"><video src="mv.mp4" controls height="300px"></video></div>
+<div class="hty"><br><br><br><br><br><br><br>故事的结局还是如期到来<br>曾经无数次走过的场景<br>曾经无比熟悉的人们<br>我们就这样，各自奔天涯<br>记住分别留下的约定誓言<br>愿再次重逢石大，我们一如从前            
+</div>
+<a id="13"></a><img src="分割线左.gif"/>
+<h2>欢迎走进皖国故都 &nbsp;&nbsp;安徽潜山</h2>
+<div class="tianzhu">
+<img src="遥天一柱.jpg"/><img src="仙桥夕照.jpg"/><img src="总关寨.jpg"/><img src="三祖寺3.jpg"/><img src="三祖寺1.jpg"/><img src="二乔公园.jpg"/><img src="二乔公园2.jpg"/><img src="三重门.jpg"/><img src="烈士陵园.jpg"/>
+</div>
+    <div class="box">
+    <img class="yuantu" src="天柱.jpg"  border="0">
+    <div class="text">安庆市潜山县西部的天柱山，因独特的自然景观，名列安徽省三大名山之一（黄山、九华山、天柱山）。早在汉武帝时就封为“南岳”，历代都有人文活动。建国后开发为风景名胜区，景区于2011年获AAAAA级旅游景区称号。2011年9月被联合国教科文组织正式批准成为世界地质公园。</div></img></div>
+	<div class="box">
+	<img class="yuantu" src="三祖寺.jpg"  border="0">
+    <div class="text2">三祖寺坐落在大别山东南麓的安徽省潜山县城西北9公里处的谷口凤形山上，占地面积7.04平方公里。三祖禅寺在南朝梁武帝时开山，原名山谷寺，后因禅宗三祖僧璨在此驻锡，故名三祖寺。三祖寺曾有林逋、王安石、苏东坡、黄庭坚、李公麟、陆宰等文人游寺题诗。有诗云“禅林谁第一，此地冠南州”。三祖寺于1982年被国务院列为汉族地区142所重要寺庙之一。</div></img></div>
+	<a id="14"></a><div class="photowall">
+	<ul class="wall_a">
+    <li><a href=""><img src="野寨中学.jpg">
+      <figcaption>
+        <h2><center><font face="楷书">时光如白驹过隙，世事如白云苍狗</font></center></h2> 
+        <h2><font face="楷书">最黑暗的是你给的，最美丽的是你予的</font></h2> 
+        <h2><font face="楷书">那些痛恨的过去，那些怀念的曾经</font> </h2>
+		<h2><font face="楷书">都已经定格在时光的相册</font></h2> 
+		<h2><font face="楷书">只愿回眸间，你仍是最初的模样</font></h2>
+		<h2><font face="楷书">致旧时光——最美的大野</font></h2>
+      </figcaption></a>
+      </li></ul>
+	  </div>
+	<br><br><br>
+	<div class="xuanzhuan">
+	<div class="fatDiv">		
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="笑脸.gif"></div>
+			<div><img src="大学生活.gif"></div>
+</div></div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="slideshow">
+    <img class="active" src="1 (1).jpg" />
+    <img src="1 (2).jpg" />
+    <img src="1 (3).jpg" />
+    <img src="1 (4).jpg" />
+    <img src="1 (5).jpg" />
+    <img src="1 (6).jpg" />
+    <img src="1 (7).jpg" />
+    <img src="1 (8).jpg" />
+
+</div>
+<script>
+    //---------主角：轮播图函数-------------
+function slideshow() {
+  var slideshow=document.getElementById("slideshow"),
+  imgs=slideshow.getElementsByTagName("img"), //得到图片们
+  current=0; //current为当前活跃的图片编号
+  function slideOff() {
+    imgs[current].className=""; //图片淡出
+  }
+  function slideOn() {
+    imgs[current].className="active"; //图片淡入
+  }
+  function changeSlide() { //切换图片的函数
+    slideOff();
+    current++; //自增1
+    if(current>=imgs.length) current=0;
+    slideOn();
+  }
+  //每2s调用changeSlide函数进行图片轮播
+  var slideon=setInterval(changeSlide,2000);
+  slideshow.onmouseover=function () {
+    clearInterval(slideon); //当鼠标移入时清除轮播事件
+  }
+  slideshow.onmouseout=function () {
+    slideon=setInterval(changeSlide,1500); //当鼠标移出时重新开始轮播事件
+  }
+}
+slideshow();
+</script>
+<a id="15">
+<marquee direction="right" scrollamount="8"><img src="run.gif"/></marquee>
+<div class="down">
+  <a class="down" href=""><span>加入我们</span></a>&nbsp;
+  <a class="down" href=""><span>个人简介</span></a>&nbsp;
+  <a class="down" href=""><span>服务协议</span></a>&nbsp;
+  <a class="down" href=""><span>隐私政策</span></a>&nbsp;
+  <a class="down" href=""><span>免责协议</span></a>&nbsp;
+  <a class="down" href=""><span>联系我们</span></a>&nbsp;<br>
+  友情链接：<a class="down" href="https://www.baidu.com/" target="blank"><span>百度</span></a>&nbsp;
+  <a class="down" href="https://weibo.com/" target="blank"><span>微博</span></a>&nbsp;
+  <a class="down" href="https://www.bilibili.com/" target="blank"><span>bilibili</span></a>&nbsp;<br>
+  <p>design by:糍粑的芝麻糊❤</p>
+  <p class="down"><a class="down" href="问卷调查.html">问卷调查&nbsp&nbsp&nbsp&nbsp</a>排版不易 侵权必究</p>
+</div>
+	</body>
+
+</html>

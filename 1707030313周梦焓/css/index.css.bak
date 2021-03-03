@@ -1,0 +1,17 @@
+.photowall { width: 520px; background-color:rgba(0,0,0,0~1); padding: 30px 0; overflow: hidden;margin:0 auto;}
+.photowall img { display: block; opacity: 0.9; -webkit-transition: opacity 0.35s; transition: opacity 0.35s;border-radius:20px; }
+.wall_a li { float: left; position: relative; }
+.wall_a li figcaption { position: absolute; left: 0; top: 10px; }
+.wall_a li h2 { font-size: 18px; line-height: 20px; text-align:center;
+padding:15px 80px; font-weight: normal; 
+opacity:0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; 
+transition: opacity 0.35s, transform 0.35s; -webkit-transform: scale(0); 
+transform: scale(0); color: #300 }
+.wall_a li:hover h2 { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
+.wall_a li:hover img { opacity: 0.4; }
+
+.wall_b li { float: left; position: relative; }
+.wall_b li figcaption { position: absolute; left: 0; top: 10px; }
+.wall_b img{opacity: 0;}
+
+.wall_b li:hover img { img{ opacity: 1;}}

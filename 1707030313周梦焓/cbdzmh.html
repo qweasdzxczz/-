@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cbdzmh</title>
+    <style>
+	body{
+	    background:url(images/背景.jpg);
+	  background-size:cover;
+	  background-repeat:no-repeat;
+	  background-attachment:fixed;
+		}
+       *{
+        margin: 0px;
+        padding:0px;
+       }
+       .box{
+        position: relative;
+        top:0px; 
+        }
+       ul li{
+        list-style-type: none;
+        position: absolute;
+        padding:10px;
+        width:300px; 
+        border:1px solid #ccc;
+        -webkit-transition:all .7s ease-out .1s; 
+        -moz-transition:all .7s ease-out .1s; 
+        -o-transition:all .7s ease-out .1s; 
+        transition:all .7s ease-out .1s;
+        opacity:0;
+       }
+       h1{
+        text-align: center;
+       }
+       h1 span{color: #ff0ff0;}
+    </style>
+    <script>
+       document.getElementsByClassName=function(oparent,oclass){  
+            try {  
+                return oparent.querySelectorAll("." + oclass);  
+            } catch (ex){  
+                var reset = [];  
+                var reg = new RegExp("\\b" + oclass + "\\b");  
+                var oCur = oparent.all;  
+                for (var i = 0; i < oCur.length; i++) {  
+                    if (reg.test(oCur[i].className)) {  
+                        reset.push(oCur[i]);  
+                    }  
+                };  
+                return reset;  
+            }  
+        }  
+      
+        window.onresize=window.onload=function(){
+           var obox=document.getElementsByClassName(document,"box")[0];
+               margin=10;
+               oli=obox.getElementsByTagName("li");
+               liWidth=oli[0].offsetWidth+margin; 
+              function show(){
+                   var bodyWidth=document.body.offsetWidth;
+                       columnHeight=[];
+                     /*olight=oli.length;*/
+                       n=parseInt(bodyWidth/liWidth);
+                       columnNum=n==0?1:n;
+                      // console.log(columnNum)
+                       bodyLeft=bodyWidth>=liWidth?bodyWidth-columnNum*liWidth:0;
+                       obox.style.left=parseInt(bodyLeft/2)-(margin/2)+"px";
+                        j=0;
+                       for (var i = 0; i < oli.length; i++) {
+                           if(i<columnNum){
+                                columnHeight[i]=oli[i].offsetHeight+margin;
+                                oli[i].style.left=i*liWidth+"px";
+                                oli[i].style.top=0;
+                           }else{
+                                if(j>=columnHeight.length){
+                                   j=0;
+                                }
+                            var imgheight=oli[i].offsetHeight+margin;
+                                oli[i].style.top=columnHeight[j]+"px";
+                                oli[i].style.left=j*liWidth+"px";
+                                columnHeight[j]+=imgheight;
+                                j++;
+                                console.log(j+"J"+oli[i].offsetTop+"和"+ j*liWidth+"I"+i)
+                                }
+                            
+                            
+                       }
+ 
+               }
+               function runing(){
+                    wscrillTop=document.documentElement.scrollTop||document.body.scrollTop;
+                    winH=document.documentElement.clientHeight;
+                    for (var i = 0; i < oli.length; i++) {
+                        var oliheight=oli[i].offsetHeight/3;
+                            scrolltop=(oli[i].getBoundingClientRect().top)+wscrillTop;
+                             if(scrolltop>=wscrillTop&&wscrillTop+winH>scrolltop+oliheight){
+                                 oli[i].style.opacity=1;
+                             }
+                    };
+               }
+               show(); 
+               runing();
+               window.onscroll=function(){
+                runing();
+               }             
+        }
+    
+    </script>
+</head>
+<body>
+
+     <div class="box">
+         <ul>
+             <li><img src="images/1.jpg" alt="111111"></li>
+             <li><img src="images/2.jpg" alt="111111"></li>
+             <li><img src="images/3.jpg" alt="111111"></li>
+             <li><img src="images/4.jpg" alt="111111"></li>
+             <li><img src="images/5.jpg" alt="111111"></li>
+             <li><img src="images/6.jpg" alt="111111"></li>
+             <li><img src="images/7.jpg" alt="111111"></li>
+             <li><img src="images/8.jpg" alt="111111"></li>
+             <li><img src="images/9.jpg" alt="111111"></li>
+             <li><img src="images/10.jpg" alt="111111"></li>
+             <li><img src="images/11.jpg" alt="111111"></li>
+             <li><img src="images/12.jpg" alt="111111"></li>
+             <li><img src="images/13.jpg" alt="111111"></li>
+             <li><img src="images/14.jpg" alt="111111"></li>
+             <li><img src="images/15.jpg" alt="111111"></li>
+             <li><img src="images/16.jpg" alt="111111"></li>
+             <li><img src="images/17.jpg" alt="111111"></li>
+             <li><img src="images/18.jpg" alt="111111"></li>
+             <li><img src="images/19.jpg" alt="111111"></li>
+             <li><img src="images/20.jpg" alt="111111"></li>
+             <li><img src="images/21.jpg" alt="111111"></li>
+     </div>
+</body>
+</html>
